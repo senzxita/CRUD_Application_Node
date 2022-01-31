@@ -13,6 +13,7 @@ const app = express();
 app.get("/test", (_req, res) => {
     res.status(200).send("Hello world")
 })
+module.exports = app
 
 const { port: appPort, hostUrl } = require('./server/config');
 
