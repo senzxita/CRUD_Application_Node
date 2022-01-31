@@ -4,7 +4,7 @@
   "description": "crud application with express and mongodb",
   "main": "server.js",
   "scripts": {
-    "test": "./server.test.js",
+    "test": "jest ./server.test.js",
     "start": "nodemon server.js"
   },
   "keywords": [
