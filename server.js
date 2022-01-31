@@ -10,6 +10,10 @@ const connectDB = require('./server/database/connection');
 
 const app = express();
 
+app.get("/test", (_req, res) => {
+    res.status(200).send("Hello world")
+})
+
 const { port: appPort, hostUrl } = require('./server/config');
 
 
