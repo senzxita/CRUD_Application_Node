@@ -34,7 +34,7 @@ jobs:
     needs: [build]
     steps:
     -name: run eb init
-      run: eb init
+    -run: eb init
 
     - name: Deploy to Elastic Beanstalk
       uses: hmanzur/actions-aws-eb@v1.0.0
