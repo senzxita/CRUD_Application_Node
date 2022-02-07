@@ -57,7 +57,7 @@ jobs:
           aws-id: ${{ secrets.AWS_ID }}
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-default_region: "us-east-1"
+          aws-default-region: "us-east-1"
       - run: |
 # AWS_VERSION_LABEL=${{env.APP_NAME}}-${{env.PIPELINE_ID}}
 
