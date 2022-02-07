@@ -36,6 +36,7 @@ jobs:
     #- name: Deploy to Elastic Beanstalk
     - uses: hmanzur/actions-aws-eb@v1.0.0
       with:
+        command: eb init
         command: 'deploy ${{ secrets.ENVIRONMENT_NAME }}'
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
