@@ -34,6 +34,7 @@ jobs:
     
   create_eb_version:
     runs-on: ubuntu-latest
+    needs: [build]
     steps:
       - name: Deploy to EBS
         uses: einaregilsson/beanstalk-deploy@v10
