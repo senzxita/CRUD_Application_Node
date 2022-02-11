@@ -36,12 +36,12 @@ jobs:
         deployment_package: deploy.zip
 
     
-
+#commented
     # - name: Upload package to S3 bucket
     #     run: aws s3 cp deploy_package.zip s3://my-awesome-app-deploy-andrey/
 
     
-    
+
     #   - name: Deploy new ElasticBeanstalk Application Version
     #     run: aws elasticbeanstalk update-environment\
     #       --environment-name Myawesomeapp-env-1\ 
