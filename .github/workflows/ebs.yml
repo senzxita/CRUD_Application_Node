@@ -19,7 +19,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@b8c74de753fbcb4868bf2011fb2e15826ce973a
       
       with:
-        role-to-assume: arn:aws:iam::123456789100:role/my-github-actions-role
+        role-to-assume: arn:aws:iam::478064462638:role/aws-elasticbeanstalk-service-role
         aws-access-key-id: ${{ secrets.ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
         aws-region: "eu-west-1"
