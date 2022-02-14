@@ -35,7 +35,7 @@ jobs:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         
-        application_name: "Crud app"
+        application_name: "Crud App"
         environment_name: CRUD-app-env
         version_label: 1
         region: "eu-west-1"
