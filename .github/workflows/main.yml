@@ -37,7 +37,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
         aws-region: "us-east-1"
 
-      - name: Deploy to EB
+    - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v20
       with:
         aws_access_key: ${{ secrets.ACCESS_KEY_ID }}
