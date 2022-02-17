@@ -28,7 +28,8 @@ jobs:
     - name: Create ZIP deployment package
       run: |
         npm ci
-        zip -r deploy_package.zip ./
+        zip -r deploy.zip . -x '*.git*'
+      # zip -r deploy_package.zip ./
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
