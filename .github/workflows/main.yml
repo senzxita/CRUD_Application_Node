@@ -22,7 +22,6 @@ jobs:
 
     - name: Create ZIP deployment package
       run: |
-        npm ci
         zip -r deploy.zip . -x '*.git*'
      
     - name: Configure AWS Credentials
@@ -39,7 +38,7 @@ jobs:
         aws_secret_key: ${{ secrets.SECRET_ACCESS_KEY }}
         application_name: "Crud App"
         environment_name: Crudapp-env
-        version_label: 1234
+        version_label: "ver-${{ github.sha }}"
         region: "us-east-1"
         deployment_package: deploy.zip
 
