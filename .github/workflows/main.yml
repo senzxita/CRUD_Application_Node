@@ -55,7 +55,7 @@ jobs:
        run: |
          aws elasticbeanstalk create-application-version \
          --application-name CrudApp \
-       --source-bundle S3Bucket="crud-app",S3Key="deploy_package.zip" \          
+       --source-bundle S3Bucket="crud-app",S3Key="deploy.zip" \          
          --version-label "ver-${{ github.sha }}" \
          --description "commit-sha-${{ github.sha }}"
 
