@@ -41,7 +41,7 @@ jobs:
         environment_name: CrudApp-env-1
         version_label: 1
         region: "us-east-1"
-    #    deployment_package: deploy.zip
+        deployment_package: deploy.zip
 
     # - name: Upload package to S3 bucket
     #   run: aws s3 cp deploy_package.zip s3://crud-app/
