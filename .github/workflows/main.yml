@@ -3,6 +3,9 @@
 
 name: Node.js CI
 
+env:
+  MONGO_URI: "mongodb+srv://crud-app:gWW2U8X4sbhua6c@cluster0.oj4jk.mongodb.net/CrudDatabase?retryWrites=true&w=majority"
+
 on:
   push:
      branches: [ main ]
