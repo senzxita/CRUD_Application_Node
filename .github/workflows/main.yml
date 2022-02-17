@@ -16,7 +16,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v2
 
@@ -46,16 +46,16 @@ jobs:
     # - name: Upload package to S3 bucket
     #   run: aws s3 cp deploy_package.zip s3://crud-app/
 
-     - name: Create new ElasticBeanstalk Application Version
-       run: |
-         aws elasticbeanstalk create-application-version \
-         --application-name CrudApp \
-       --source-bundle S3Bucket="crud-app",S3Key="deploy.zip" \          
-         --version-label "ver-${{ github.sha }}" \
-         --description "commit-sha-${{ github.sha }}"
+    - name: Create new ElasticBeanstalk Application Version
+      run: |
+        aws elasticbeanstalk create-application-version \
+        --application-name CrudApp \
+        --source-bundle S3Bucket="crud-app",S3Key="deploy.zip" \          
+        --version-label "ver-${{ github.sha }}" \
+        --description "commit-sha-${{ github.sha }}"
 
-     - name: Deploy new ElasticBeanstalk Application Version
-       run: aws elasticbeanstalk update-environment --environment-name CrudApp-env-1 --version-label "ver-${{ github.sha }}"
+    - name: Deploy new ElasticBeanstalk Application Version
+      run: aws elasticbeanstalk update-environment --environment-name CrudApp-env-1 --version-label "ver-${{ github.sha }}"
 
     #
     # - name: Use Node.js ${{ matrix.node-version }}
