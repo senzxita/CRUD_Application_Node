@@ -75,7 +75,7 @@ jobs:
   #         aws_secret_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
   #         application_name: "crud-app"
   #         aws_region: "us-east-1"
-  #         deployment_package: deploy.zip #
+  #         deployment_package: deploy.zip 
 
   #     - name: Deployed!
   #         run: echo App deployed to ELB
