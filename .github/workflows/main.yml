@@ -110,8 +110,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.SECRET_ACCESS_KEY }}
-          application_name: "Crud App"
-          environment_name: Crudapp-env
+          application_name: "crud_app"
+          environment_name: crud-env
           version_label: "ver-${{ github.sha }}"
           region: "us-east-2"
           deployment_package: deploy.zip
