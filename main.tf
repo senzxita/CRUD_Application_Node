@@ -64,11 +64,11 @@ resource "aws_elastic_beanstalk_environment" "ebs_env" {
     name      = "MaxSize"
     value     = 2
   }
-  setting {
-    namespace = "aws:elasticbeanstalk:healthreporting:system"
-    name      = "SystemType"
-    value     = "enhanced"
-  }
+  # setting {
+  #   namespace = "aws:elasticbeanstalk:healthreporting:system"
+  #   name      = "SystemType"
+  #   value     = "enhanced"
+  # }
 
   setting {
     namespace = "aws:elasticbeanstalk:cloudwatch:logs"
