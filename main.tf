@@ -105,5 +105,5 @@ resource "aws_elastic_beanstalk_environment" "ebs_env" {
     name      = "RetentionInDays"
     value     = 7
   }
- 
+  #Cloudwatch Alarm, it is set by default
 }
