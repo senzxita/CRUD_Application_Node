@@ -93,10 +93,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Node V
-        uses: actions/setup-node@v2
-        with:   
-          node-version: '14'
+      # - name: Node V
+      #   uses: actions/setup-node@v2
+      #   with:   
+      #     node-version: '14'
         
       - name: Create ZIP deployment package
         run: | 
